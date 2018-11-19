@@ -6,8 +6,8 @@
 
 
 import TrabalhoAlpooLivraria.Codigo.Livro;
-import TrabalhoAlpooLivraria.Telas.TelaMenuPrincipal;
-import TrabalhoAlpooLivrariaJDBC.FabricaConexao;
+import VIEW.TelaMenuPrincipal;
+import TrabalhoAlpooLivrariaJDBC.LivroJDBC;
 import java.sql.SQLException;
 
 /**
@@ -17,7 +17,7 @@ import java.sql.SQLException;
 public class Testes {
     
     public static void main(String[] args) {
-        FabricaConexao con = new FabricaConexao();
+        LivroJDBC con = new LivroJDBC();
         TelaMenuPrincipal tmp= new TelaMenuPrincipal();
         tmp.setVisible(true);
     }
